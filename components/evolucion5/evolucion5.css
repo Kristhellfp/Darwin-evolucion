@@ -1,7 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
 .lineadeltiempo {
-    width: 375px;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     position: relative;
+}
+
+.titulo {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .casilla {
@@ -11,7 +27,6 @@
     margin: 10px 0;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,13 +39,24 @@
 
 .contenidolineadeltiempo {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .fecha {
     font-weight: bold;
     margin-bottom: 10px;
     color: #000000;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    padding: 10PX;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.texto {
+    flex: 1;
+    text-align: center;
 }
 
 p {
@@ -41,4 +67,28 @@ p {
 img {
     max-width: 100%;
     border-radius: 8px;
+    margin-top: 10px;
+}
+
+@media (min-width: 769px) {
+    .casilla {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenidolineadeltiempo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .texto {
+        text-align: left;
+        margin-right: 20px; 
+    }
+
+    img {
+        max-width: 200px;
+        margin-left: 20px;
+        margin-top: 0;
+    }
 }

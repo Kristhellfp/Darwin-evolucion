@@ -1,9 +1,10 @@
 let DOM_evolucion5 = document.querySelector("#evolucion5");
 DOM_evolucion5.innerHTML = `
 <div class="lineadeltiempo">
+ <div class="lineadeltiempo">
+        <h1 class="titulo"> Delfines y su evolución...🐬🩷 </h1>
         <div class="casilla izquierda">
             <div class="contenidolineadeltiempo">
-                <h1>Evolución 🐬🩷</h1>
                 <div class="fecha">Hace 50 millones de años</div>
                 <p>Los delfines caminaban por la Tierra: Imagina si pudieras ver a un delfín saltando y corriendo por la tierra hace mucho tiempo. Eso es exactamente lo que hacían sus antiguos ancestros antes de convertirse en los nadadores marinos que conocemos hoy.</p>
                 <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/kutchicetus_bw-1400x800-0817.jpg" alt="">
